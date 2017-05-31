@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music Centre</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+	function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_item_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+</script>
+</head>
+
+<body onLoad="run_first()">
+	<div id="wrapper" >
+    
+	<header>
+    	
+    	<img src="ClientContent/TCMC Images Docs/SiteImages/TCMC98Neg.jpg" alt="no logo" style="border:#B3B3B3">
+    </header>
+    
+    <div class="nav" style="border:solid #6C6C6C">
+    <a href="index.html" id="0" onClick="nav_item_selected(0)">Home</a>
+    <div class="dropdown">
+    	<button class="dropbtn" id="1">Events</button>
+        <div class="dropdown-content">
+        <a href="S_V_C.html"  onClick="nav_item_selected(1)">Sunday variety concert</a>
+        <a href="T_G_O.html"  onClick="nav_item_selected(1)">Townsville guitar orchestra</a>
+        <a href="A_S_B.html"  onClick="nav_item_selected(1)">Arcadia state band</a>
+        <a href="B_R_O.html"  onClick="nav_item_selected(1)">Barrier reef orchestra</a>
+        </div>
+    </div>
+   <a href="bulletin_boards.html" id="2" onClick="nav_item_selected(2)">Bulletin Board</a>
+    <a href="musos.html" id="3" onClick="nav_item_selected(3)">Musos</a>
+    <a href="member.html" id="4" onClick="nav_item_selected(4)">Members</a>
+    <a href="sponsor.html" id="5" onClick="nav_item_selected(5)">Sponsors</a>
+    <a href="about_us.html" id="6" onClick="nav_item_selected(6)">About Us</a>
+    <a href="contact_us.html" id="7" onClick="nav_item_selected(7)">Contact Us</a></div>
+    
+    <h2>Welcome to Musos</h2>
+    <section id="col91" >
+   
+    <h3>Aquapella</h3>
+    	<p>
+        Aquapella are 50 singers from the Townsville area bringing you a cappella world music at its very best: inspiring and uplifting harmonies from around the globe. A South African party song, a Hungarian love triangle, "The Lion Sleeps Tonight" in French - a sumptuous variety of different languages, stories, rhythms and moods to entertain and move you in the wonderful common language of music. Come along and travel the world by song!
+
+<ul><strong>Choir director Beat Lehmann </strong> was born in Switzerland.</ul> <li>He first became involved in choir music by participating in classical productions like Handel's Messiah, Mozart's Mass in C minor etc.</li> <li>A study year abroad gave him the opportunity to sing with the Pontardullais Welsh Male Choir.</li> <li>After completing an M.A. in Social Anthropology he concentrated on his other passion, dance, directing a Modern Dance Company for several years.</li><li>In 1986, Beat migrated to Australia where he completed a Ph.D. in Linguistics and involved himself in choir music again.</li> <br />
+
+<strong>Aquapella won the ABC Choir of the Year competition for Queensland in 2006.</strong><br  />
+<strong><a href="mailto:beatlehmann@iprimus.com.au">beatlehmann@iprimus.com.au</a></strong>
+        </p>
+            
+        	
+    </section>
+    
+    <section id="col92">
+    <img src="ClientContent/TCMC Images Docs/musos/Aquapella01.jpg" alt="Aquapella image" width="450px" height="363px">
+    </section>
+    
+    <section id="col93">
+    <h3>Aviva Quartet</h3>
+    <p><ul>Four talented musicians combine their skills in a variety of musical styles including fiery Rhumbas, Tangos, Serenades - a mixture of the most devine and swoon-worthy pieces, guaranteed to delight the senses. 
+The group features <strong>Caroline Lloyd-Doolan</strong> and <strong>Susan Fraser</strong> on Violin, <strong>Ivy Wu</strong> on Cello and <strong>Jessica Winton</strong> on viola.</ul>
+
+<li>Caroline is a well known performer both locally and regionally and Susan is also well known on the local music scene.</li> 
+<li>Ivy hails from Brisbane having completed her studies in France.</li>
+<li>Jessica has come back to Townsville after completing her degree in Tasmania.</li><br />
+</p><p style="text-align:center">
+<strong>For more information -</strong><br />
+
+<strong>Phone   07 4724 2086</strong><br />
+<strong>Mobile    0402 255 182</strong><br />
+
+<strong>e-mail <a href="mailto:admin@townsvillemusic.org.au">admin@townsvillemusic.org.au</a></strong><br />
+    </p>
+    
+        
+
+    </section>
+    <section id ="col94">
+    <img src="ClientContent/TCMC Images Docs/musos/AVIVA-LANE500.jpg" alt="Aviva Pic" width="450px" height="340px">
+    </section>
+    
+    <section id="col95">
+    <img src="ClientContent/TCMC Images Docs/musos/Celtic-Fyre-Wall-with-Fire8.jpg" alt="Celtic pic" width="450px" height="340px">
+    </section>
+    
+    <section id="col96">
+    <h3>Celtic Fyre</h3> 
+<p><ul>The alternative celtic rock band from North Queensland.</ul>
+<table style="text-align:left">
+	<tr>
+    	<td>
+        	<img src="ClientContent/TCMC Images Docs/randomImages/black-dot.png" alt=" dot">
+            </td>
+            <td style="text-align:left">Typical audience response: - "WOW - I wasn't prepared for that! Racing around the stage in kilts,
+                 blowing bagpipes, jumping from one instrument to the next, these guys know how to entertain!</td>
+     </tr>
+      <tr>
+            <td>
+        	<img src="ClientContent/TCMC Images Docs/randomImages/black-dot.png" alt=" dot">
+            </td>
+            <td style="text-align:left">
+            	They will break your heart with the mournful and eerie sounds of the Great Highland Bagpipe           
+                 and then crank it up real hard and rock you 'til you drop. 
+            </td>
+       </tr>
+       
+       <tr>
+            <td>
+        	<img src="ClientContent/TCMC Images Docs/randomImages/black-dot.png" alt=" dot">
+            </td>
+            <td style="text-align:left">
+            	This 11 piece band is a fun-loving kick-em-in-the-pants
+                 band that just wants to rock - celtic style!
+            </td>
+    
+	
+	   </tr>
+</table>
+
+ <br><br>
+
+<strong><a href="www.celticfyre.com" target="_blank">www.celticfyre.com</a></strong></p>
+    
+    </section>
+    
+     <section id="col98">
+     
+    <h3>Dirty Dozen   <a href="https://www.facebook.com/thedirtydozenband" target="_blank"><img src="ClientContent/TCMC Images Docs/randomImages/find-us-on-facebook-badge.png" alt=""   style="align:right;"> </a></h3>
+<p><ul>Townsville's dynamic 12-piece Stage Band! <br> 
+
+Jazz, rock, blues and modern top-40 songs featuring vocalists, trumpets, saxophones, trombone, drums, piano/keyboard and guitars. <br>
+
+Some titles from the repertoire <br><br>   <li> It Don't Mean a Thing  </li>  <li>Mustang Sally   </li><li>  Spinning Wheel </li><li>   Moondance </li><li>  In the Midnight Hour  </li><li> Walkin' on Sunshine </li></ul><br><br>
+
+<strong>Contact <i>Andi Hodgson 0421 072 625 </i></strong></p>
+    </section>
+    
+    <section id="col97">
+    <img src="ClientContent/TCMC Images Docs/musos/DD600400.png"  alt="Dirty Dozen pic" width="450px" height="340px">
+    </section>
+    
+        
+   
+    
+    <a href="#top" class="btn1">Return to top</a>
+    <footer><h4 >Design By Team03
+    	<span class="f1">
+        <a href="https://www.youtube.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/youtube-logo-icon-65474.png" alt="youtube pic"  width="60px" height="50px"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/fb.png" alt="facebook pic pic" width="60px" height="50px"></a>
+        <a href="https://au.linkedin.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/social_linkedin_box_blue_256_30641.png" alt="linkedin pic" width="60px" height="50px"></a></span></h4>
+    
+    </footer>
+    </div>
+</body>
+</html>
