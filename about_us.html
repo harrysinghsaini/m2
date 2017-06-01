@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music Centre</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+	function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_item_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+</script>
+</head>
+
+<body onLoad="run_first()">
+	<div id="wrapper" >
+    
+	<header>
+    	
+    	<img src="ClientContent/TCMC Images Docs/SiteImages/TCMC98Neg.jpg" alt="no logo" >
+    </header>
+        <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+</div> 	
+    
+    <div class="nav">
+    <a href="index.html" id="0" onClick="nav_item_selected(0)">Home</a>
+    <div class="dropdown">
+    	<button class="dropbtn" id="1">Events</button>
+        <div class="dropdown-content">
+        <a href="S_V_C.html"  onClick="nav_item_selected(1)">Sunday variety concert</a>
+        <a href="T_G_O.html"  onClick="nav_item_selected(1)">Townsville guitar orchestra</a>
+        <a href="A_S_B.html"  onClick="nav_item_selected(1)">Arcadia state band</a>
+        <a href="B_R_O.html"  onClick="nav_item_selected(1)">Barrier reef orchestra</a>
+        </div>
+    </div>
+    <a href="bulletin_boards.html" id="2" onClick="nav_item_selected(2)">Bulletin Board</a>
+    <a href="musos.html" id="3" onClick="nav_item_selected(3)">Musos</a>
+    <a href="member.html" id="4" onClick="nav_item_selected(4)">Members</a>
+    <a href="sponsor.html" id="5" onClick="nav_item_selected(5)">Sponsors</a>
+    <a href="about_us.html" id="6" onClick="nav_item_selected(6)">About Us</a>
+    <a href="contact_us.html" id="7" onClick="nav_item_selected(7)">Contact Us</a></div>
+        <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+</div> 	
+    <section id="col1" class="nav">
+    	<h1>
+    	<img src="ClientContent/TCMC Images Docs/randomImages/bass.png" alt="bass">
+        </h1>	
+         
+        <h1>&nbsp;</h1>
+        
+        <h1>
+    	<img src="ClientContent/TCMC Images Docs/randomImages/congas.png" alt="congas"></h1>
+      <p>&nbsp; </p>	
+        
+        <h1>
+    	<img src="ClientContent/TCMC Images Docs/randomImages/drums01.png" alt="drums"></h1>
+        <p>&nbsp; </p>	
+         
+        <h1>
+    	<img src="ClientContent/TCMC Images Docs/randomImages/electric.png" alt="electric">
+        </h1>
+        
+        	
+    </section>
+   
+    <section id="col7">
+    
+ <h1>About Us</h1>  
+        
+<h3>       
+Townsville has a population of about 200,000 and is growing at about 1 suburb per year, so there is a lot of musical activity. All private schools and most government schools have music teachers. The larger private schools are Townsville Grammar, the Cathedral School and Ryan Catholic College. The larger public high schools are Kirwan and Pimlico.<br><br>
+
+Based in Townsville, North Qld, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists.
+Civic Theatre.<br><br>
+
+Are you new to Townsville?<br>
+General information about Townsville is available at -<br>
+<a rel="stylesheet" href="http://www.townsville.qld.gov.au/townsville/infocentre/Pages/default.aspx" style="color:#B5AFAF">http://www.townsville.qld.gov.au/townsville/infocentre/Pages/default.aspx</a>
+ 
+</h3>
+ <br><br>
+ 
+    </section>
+        <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+</div> 	
+    <footer><h4 >Design By Team03
+    	<span class="f1">
+        <a href="https://www.youtube.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/youtube-logo-icon-65474.png" alt="youtube pic"  width="60px" height="50px"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/fb.png" alt="facebook pic pic" width="60px" height="50px"></a>
+        <a href="https://au.linkedin.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/social_linkedin_box_blue_256_30641.png" alt="linkedin pic" width="60px" height="50px"></a></span></h4>
+    
+    </footer>
+    </div>
+</body>
+</html>
