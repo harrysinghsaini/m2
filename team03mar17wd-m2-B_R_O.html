@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music Centre</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+	function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_item_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+</script>
+</head>
+
+<body onLoad="run_first()">
+	<div id="wrapper" >
+    
+	<header>
+    	
+    	<img src="ClientContent/TCMC Images Docs/SiteImages/TCMC98Neg.jpg" alt="no logo" >
+    </header>
+    
+    <div class="nav">
+    <a href="index.html" id="0" onClick="nav_item_selected(0)">Home</a>
+    <div class="dropdown">
+    	<button class="dropbtn" id="1">Events</button>
+        <div class="dropdown-content">
+        <a href="S_V_C.html"  onClick="nav_item_selected(1)">Sunday variety concert</a>
+        <a href="T_G_O.html"  onClick="nav_item_selected(1)">Townsville guitar orchestra</a>
+        <a href="A_S_B.html"  onClick="nav_item_selected(1)">Arcadia state band</a>
+        <a href="B_R_O.html"  onClick="nav_item_selected(1)">Barrier reef orchestra</a>
+        </div>
+    </div>
+    <a href="bulletin_boards.html" id="2" onClick="nav_item_selected(2)">Bulletin Board</a>
+    <a href="musos.html" id="3" onClick="nav_item_selected(3)">Musos</a>
+    <a href="member.html" id="4" onClick="nav_item_selected(4)">Members</a>
+    <a href="sponsor.html" id="5" onClick="nav_item_selected(5)">Sponsors</a>
+    <a href="about_us.html" id="6" onClick="nav_item_selected(6)">About Us</a>
+    <a href="contact_us.html" id="7" onClick="nav_item_selected(7)">Contact Us</a></div>
+    
+    <section id="col11" class="nav">
+    	<img src="ClientContent/TCMC Images Docs/randomImages/harp.png" alt="not available">
+    </section>
+    <div>
+    <section id="col4">
+    
+    
+      
+    	
+  <table class="table1">
+    	<tr>
+        	<td>
+    			<h1> BARRIER REEF ORCHESTERA</h1>
+                <h2>Evening Serenade</h2><br>
+       			<h> Saturday 28th October 7.30pm<br>
+        		Soloists:<br>
+         		Sally Walker, Flute and Cassandra Wright, Soprano<br>
+        		Concer Partner:<br>
+         		Australian Concerto and Vocal Competition
+       			</h>
+    		</td>
+       </tr>
+       		<tr>
+       			<td class="td2">
+    				<p><img src="ClientContent/TCMC Images Docs/events/CelticFyre300.jpg" alt="no image" width="100%"></p>
+    			</td>
+  			</tr>
+        </table>
+    </section>
+ 	</div>
+    <footer><h4 >Design By Team03
+    	<span class="f1">
+        <a href="https://www.youtube.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/youtube-logo-icon-65474.png" alt="youtube pic"  width="60px" height="50px"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/fb.png" alt="facebook pic pic" width="60px" height="50px"></a>
+        <a href="https://au.linkedin.com/" target="_blank"><img src="ClientContent/TCMC Images Docs/SiteImages/social_linkedin_box_blue_256_30641.png" alt="linkedin pic" width="60px" height="50px"></a></span></h4>
+    
+    </footer>
+    </div>
+</body>
+</html>
